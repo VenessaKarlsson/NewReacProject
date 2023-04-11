@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "Bosse",
+    "age": 3,
+    "breed": "Rottis",
+    "gender": "Male",
+    "about": "Boose is a really fun-loving and energeric dog",
+    "image": "img/beagle.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Molly",
+    "age": 6,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/collie.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Boss",
+    "age": 1,
+    "breed": "Husky",
+    "gender": "Male",
+    "image": "img/boxer.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Gigi",
+    "age": 2,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/CavalierKingCharlesSpaniel.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Jack",
+    "age": 6,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/mix1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Fergie",
+    "age": 1,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/rottweiler.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Angel",
+    "age": 1,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/rottweiler.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Doggy",
+    "age": 1,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/mix1.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Bonso",
+    "age": 1,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/rottweiler.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Lexi",
+    "age": 1,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/siberianhusky2.jpg"
+  },
+  {
+    "id": 11,
+    "name": "King",
+    "age": 1,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/pitbull.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Pince",
+    "age": 1,
+    "breed": "Mix Breed",
+    "gender": "Female",
+    "image": "img/Schnauzer.jpg"
+  }
+]
