@@ -9,7 +9,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import OurDogs from './componets/OurDogs'
-import About from './componets/About'
+import About from './componets/About.tsx'
 import Contact from './componets/Contact'
 import Test from './componets/Test'
 import { GiveInfo } from './GiveInfo'
@@ -40,7 +40,8 @@ function App() {
                 Contact
               </Nav.Link>
               <Nav.Link as={Link} to={'/test'}>
-                Test
+                {/* Test */}
+                More Info
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -52,11 +53,17 @@ function App() {
           <Route path={'/'} element={<Home />} />
           <Route
             path={'/about/'}
-            element={<About brandName="Dogs without Homes" />}
+            element={
+              <About
+                firstname1={'Hannah'}
+                firstname2={'Lacey'}
+                lastname={'Litman'}
+                counter={2005}
+              />
+            }
           />
           <Route path={'/our-dogs/'} element={<OurDogs />} />
           <Route path={'/contact/'} element={<Contact />} />
-          {/* <Route path={'/test/:id'} element={<Test />} /> */}
           <Route path={'/test/:id'} element={<Test />} />
         </Routes>
       </GiveInfo.Provider>

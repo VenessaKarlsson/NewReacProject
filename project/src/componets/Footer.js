@@ -1,24 +1,43 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
     <div>
       <FooterGrid>
         <FooterText1>
-          <h3>Learn more</h3>
-          <h3>Contact</h3>
-          <h3>Become a member</h3>
+          <Link
+            as={Link}
+            to={'/contact'}
+            style={{ textDecoration: 'none', color: 'white' }}
+          >
+            Contact
+          </Link>
+          <h4>Work with us</h4>
+          <h4>Become a member</h4>
         </FooterText1>
         <FooterText2>
-          <h3>Our dogs</h3>
-          <h3>Shechle a meeting</h3>
-          <h3>Adress: jdjdjd</h3>
+          <Link
+            as={Link}
+            to={'/our-dogs'}
+            style={{ textDecoration: 'none', color: 'white' }}
+          >
+            See Our dogs{' '}
+          </Link>
+          <h4>Schedule a meeting</h4>
+          <h4>Donate a gift</h4>
         </FooterText2>
         <FooterText3>
-          <h3>Reviews</h3>
-          <h3>Number #1 dog shelter</h3>
-          <h3>Sign in</h3>
+          <Link
+            as={Link}
+            to={'/about'}
+            style={{ textDecoration: 'none', color: 'white', fontSize: '' }}
+          >
+            About Us{' '}
+          </Link>
+          <h4>Become a volunteer</h4>
+          <h4>FAQ</h4>
         </FooterText3>
       </FooterGrid>
     </div>
@@ -32,7 +51,7 @@ const FooterGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'FooterText1 FooterText2 FooterText3 ';
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   background-color: #212529;
   /* botton: 0, ensures that the footer stays at the bottom of the page */
@@ -40,7 +59,7 @@ const FooterGrid = styled.div`
 `
 const FooterText1 = styled.div`
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;

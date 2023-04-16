@@ -1,99 +1,125 @@
 [
   {
     "id": 1,
-    "name": "Bosse",
+    "name": "Boss",
     "age": 3,
-    "breed": "Rottis",
+    "breed": "Boxer",
     "gender": "Male",
-    "about": "Boose is a really fun-loving and energeric dog",
-    "image": "img/beagle.jpg"
+    "about": "Energetic, Calm, Playfull ",
+    "image": "img/boxer.jpg",
+    "moreInfo": "Boss is an active dog who enjoys long walks and runs. He will be a great companion for anyone who enjoys outdoor activities."
   },
   {
     "id": 2,
-    "name": "Molly",
-    "age": 6,
-    "breed": "Mix Breed",
-    "gender": "Female",
-    "image": "img/collie.jpg"
+    "name": "Pince",
+    "age": 2,
+    "breed": "Golden Retriever",
+    "gender": "Male",
+    "about": "Affectionate, Playfull, Loving ",
+    "image": "img/goldenRetriever.jpg",
+    "moreInfo": "Pince is really  gentle and are known for being patient with children."
   },
+
   {
     "id": 3,
-    "name": "Boss",
+    "name": "Gigi",
     "age": 1,
-    "breed": "Husky",
-    "gender": "Male",
-    "image": "img/boxer.jpg"
+    "breed": "Cavalier King Charles Spaniel",
+    "gender": "Female",
+    "about": "Gentle, Sociable, Sensitive ",
+    "image": "img/CavalierKingCharlesSpaniel.jpg",
+    "moreInfo": " Dogs are capable of experiencing a wide range of emotions, including joy, fear, and sadness, and Gigi are often sensitive to their owner's emotions."
   },
+
   {
     "id": 4,
-    "name": "Gigi",
-    "age": 2,
-    "breed": "Mix Breed",
-    "gender": "Female",
-    "image": "img/CavalierKingCharlesSpaniel.jpg"
-  },
-  {
-    "id": 5,
     "name": "Jack",
     "age": 6,
     "breed": "Mix Breed",
-    "gender": "Female",
-    "image": "img/mix1.jpg"
+    "gender": "Male",
+    "about": "Shy, Protective, Independent ",
+    "image": "img/mix1.jpg",
+    "moreInfo": " Many dogs, like Jack are protective of their owners and their territory, which can make them great guard dogs."
   },
   {
-    "id": 6,
-    "name": "Fergie",
-    "age": 1,
-    "breed": "Mix Breed",
+    "id": 5,
+    "name": "Molly",
+    "age": 4,
+    "breed": "Collie",
     "gender": "Female",
-    "image": "img/rottweiler.jpg"
+    "about": "Intelligent, Loyal, Active ",
+    "image": "img/collie.jpg",
+    "moreInfo": " Dogs are known for their loyalty to their owners and Molly will definitely form strong bonds with other humans"
+  },
+
+  {
+    "id": 6,
+    "name": "Liza",
+    "age": 1,
+    "breed": "Husky",
+    "gender": "Female",
+    "about": "Independent, Vocal, Energetic ",
+    "image": "img/husky3.jpg",
+    "moreInfo": " Huskies are known for their unique howling and vocalizations. Liza may howl, bark, or make other noises to communicate with their owners."
   },
   {
     "id": 7,
-    "name": "Angel",
-    "age": 1,
+    "name": "Bosse",
+    "age": 4,
     "breed": "Mix Breed",
-    "gender": "Female",
-    "image": "img/rottweiler.jpg"
+    "gender": "Male",
+    "about": "Easygoing, Playful, Gentle ",
+    "image": "img/mix7.jpg",
+    "moreInfo": "Bosse loves to play and enjoy toys, games, and activities with their owners"
   },
   {
     "id": 8,
-    "name": "Doggy",
-    "age": 1,
-    "breed": "Mix Breed",
-    "gender": "Female",
-    "image": "img/mix1.jpg"
+    "name": "Fergie & Zac",
+    "age": "3 & 5",
+    "breed": "Husky Mix Breed",
+    "gender": "Female & Male",
+    "about": "Energetic, Protective, Pack mentality ",
+    "image": "img/twodogs.jpg",
+    "moreInfo": "This husky mix breed have a strong pack mentality and may display behaviors such as howling or digging if they are left alone for too long"
   },
   {
     "id": 9,
-    "name": "Bonso",
-    "age": 1,
-    "breed": "Mix Breed",
-    "gender": "Female",
-    "image": "img/rottweiler.jpg"
+    "name": "King",
+    "age": 7,
+    "breed": "Pitbull",
+    "gender": "Male",
+    "about": "Loyal, Friendly, Strong-willed ",
+    "image": "img/pitbull.jpg",
+    "moreInfo": "King can be stubborn and strong-willed, which means they may require firm training and socialization to ensure they are well-behaved."
   },
   {
     "id": 10,
-    "name": "Lexi",
-    "age": 1,
+    "name": "Angel",
+    "age": 3,
     "breed": "Mix Breed",
     "gender": "Female",
-    "image": "img/siberianhusky2.jpg"
+    "about": "Shy, Protective, Independent ",
+    "image": "img/mix5.jpg",
+    "moreInfo": "Angel is known for being independent and can be quite stubborn. She have a strong-willed personality and may require firm training."
   },
   {
     "id": 11,
-    "name": "King",
-    "age": 1,
+    "name": "Lexi",
+    "age": 2,
     "breed": "Mix Breed",
     "gender": "Female",
-    "image": "img/pitbull.jpg"
+    "about": "Sensitive, Watchful, Affectionate ",
+    "image": "img/mix8.jpg",
+    "moreInfo": "Lexi is really affectionate and often enjoy cuddling and being close to their owners."
   },
   {
     "id": 12,
-    "name": "Pince",
+    "name": "Bonso",
     "age": 1,
-    "breed": "Mix Breed",
+    "breed": "Collie",
     "gender": "Female",
-    "image": "img/Schnauzer.jpg"
+    "about": "Family-oriented, Loyal, Intelligent ",
+    "image": "img/collie2.jpg",
+    "moreInfo": "Bonso will make a great family pet because of her gentle nature and her love for human companionship."
   }
 ]

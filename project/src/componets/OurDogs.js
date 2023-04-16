@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Container, Row, Col, Card, Image, Button } from 'react-bootstrap'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import { GiveInfo } from '../GiveInfo'
 
 function OurDogs() {
+  const msg = useContext(GiveInfo)
+
   const [dog, setDog] = useState([])
 
   useEffect(() => {
@@ -22,29 +26,11 @@ function OurDogs() {
       <Wrapper>
         <ImgOf>
           {/* This is where the img is placed */}
-          <ImgText>
-            <h2>Our Dogs</h2>
-            <p>
-              A suitable dog owner is someone who understands the responsibility
-              of owning a dog and is committed to providing their pet with a
-              safe and loving home. They are willing to make the necessary time,
-              effort, and financial investment required to care for their dog's
-              physical and emotional needs.
-              <br></br>
-              <br></br>A suitable dog owner understands the importance of
-              regular exercise, proper nutrition, and grooming. They provide
-              their dog with a balanced diet and ensure that their pet receives
-              the necessary medical attention, including vaccinations and
-              routine checkups. <br></br>
-              <br></br>They also understand the importance of keeping their dog
-              clean and groomed, which includes regular baths, nail trimming,
-              and coat brushing. A suitable dog owner is also patient and kind
-              with their pet. They are willing to invest the time and effort
-              required to train their dog and establish a strong bond.
-            </p>
-          </ImgText>
+          <OurDogsText>
+            <h2>{msg}</h2>
+            <h4>Our homeless dogs is waiting for you to be their hero.</h4>
+          </OurDogsText>
         </ImgOf>
-
         <MeetText>
           <h1>We're looking for a new home </h1>
         </MeetText>
@@ -64,18 +50,39 @@ function OurDogs() {
                           alt="dogs"
                           fluid
                         />
-                        <Card.Title>{item.name}</Card.Title>
+                        <Card.Title>
+                          <h2>{item.name}</h2>
+                        </Card.Title>
                         <Card.Text>
                           <p>
                             Age: {item.age} <br></br> Breed: {item.breed}{' '}
                             <br></br> Gender: {item.gender} <br></br> About:{' '}
-                            {item.about} id: <br></br>
-                            {item.id}
+                            {item.about}
+                            {/* {item.id} */}
                           </p>
                         </Card.Text>
                       </div>
                     </Card.Body>
-                    <Button variant="primary">Read more</Button>
+                    {/* variant="success"  */}
+                    <Button
+                      style={{
+                        backgroundColor: 'rgba(23, 26, 32, 0.8)',
+                        border: 'none',
+                        padding: '10px'
+                      }}
+                    >
+                      {/* <Link key={item.id} to={`/test/${item.id}`}></Link> */}
+                      <Link
+                        to={`/test/${item.id} Name: ${item.name} Age: ${item.age} Breed: ${item.breed} Gender: ${item.gender} About: ${item.about} More Info: ${item.moreInfo}`}
+                        style={{
+                          textDecoration: 'none',
+                          color: 'white',
+                          fontWeight: '500'
+                        }}
+                      >
+                        Read more about {item.name}
+                      </Link>
+                    </Button>
                   </Card>
                 </StyleCard>
               </Col>
@@ -88,27 +95,32 @@ function OurDogs() {
 }
 
 export default OurDogs
+
 const ImgOf = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
-  background: url('/img/cardsHero1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('/img/cardsHero1.jpg');
   background-position: center;
   background-size: cover;
-  /* align-items: center; */
-
+  justify-content: center;
 `
-
-const ImgText = styled.div`
+const OurDogsText = styled.div`
+  margin-top: -1vh;
+  color: white;
+  border: 0.3vw solid white;
+  padding: 2vw;
   display: flex;
   flex-direction: column;
-  color: black;
-  margin-top: 15vh;
-
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
 `
 
 const StyleCard = styled.div`
-  height: 90vh;
+  height: 75vh;
 `
 
 const MeetText = styled.div`
